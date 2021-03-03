@@ -1,24 +1,31 @@
-@keyframes height {
+@keyframes column {
     0% {
         opacity: 0;
         height: 10px;
         border-radius: 50%;
+        display: block;
     } 
     25% {
         opacity: 100%;
         height: 10px;
         border-radius: 50%;
+        display: block;
     }
     40% {
+        opacity: 100%;
         border-radius: 20%;
+        display: block;
     }
     100% {
+        opacity: 100%;
         height: 300px;
         border-radius: 5px;
     }
+    /* 100%{
+        opacity: 0;
+    } */
 }
-
-@keyframes width {
+@keyframes line {
     0% {
         opacity: 0;
         width: 10px;
@@ -35,9 +42,11 @@
     100% {
         width: 300px;
         border-radius: 5px;
+        display: none;
     }
 }
-@keyframes box3 {
+
+@keyframes in-square {
     0% {
         width: 0;
         height: 0;
@@ -67,12 +76,71 @@
     }
 
 }
+@keyframes out-square {
+    0% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    50% {
 
+        opacity: 100%;
+        width: 80px;
+        height: 80px;
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    100% {
+        opacity: 100%;
+        width: 80px;
+        height: 80px;
+        transform: translate(-50%, -50%) rotate(-540deg);
+    }
+}
+
+@keyframes s-outline {
+    0% {
+        border: 6px solid white;
+    }
+    50% {
+        border: 6px solid white;
+    }
+    100% {
+        border: 6px solid white;
+    }
+}
+@keyframes s-outline-1{
+    0% {
+        width: 214px;
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    50% {
+        width: 10px;
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100% {
+        width: 214px;
+        transform: translate(-50%, -50%) rotate(720deg);
+    }
+}
+@keyframes s-outline-1{
+    0% {
+        width: 250px;
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    50% {
+        width: 10px;
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100% {
+        width: 250px;
+        transform: translate(-50%, -50%) rotate(720deg);
+    }
+}
 
 body {
     background-color: #06042b;
 }
-
 .father {
     height: 300px;
     width: 300px;
@@ -82,48 +150,97 @@ body {
     overflow: hidden;
     position: relative;
 }
-.box1 {
+
+.column {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 10px;
-    animation:height 3s 1 forwards;
+    animation:column 3s 1 forwards;
     transform: translate(-50%, -50%);
     background-color: white;
 }
-.box11 {
+.column-1 {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 15px;
-    animation:height 1s 1 5s forwards;
+    animation: column 1s 1 5s forwards;
     transform: translate(-50%, -50%);
     background-color: #06042b;
 }
-.box2 {
+.line {
     position: absolute;
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%);
     height: 10px;
-    animation: width 3s 1 forwards;
+    animation: line 3s 1 forwards;
     background-color: white;
 }
-.box22 {
+.line-1 {
     position: absolute;
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%);
 
     height: 15px;
-    animation:width 1s 1 5s forwards;
+    animation: line 1s 1 5s forwards;
     background-color: #06042b;
 }
-.box3 {
+
+.in-square {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    /* transform: translate(-50%, -50%); */
+    animation: in-square 4s ease 4s 1 forwards;
+    background-color: #06042b;
+}
+.out-square {
     position: absolute;
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%);
-    animation: box3 3s ease 4s 1 forwards;
+    background-color: #c75070;
+    animation: out-square 4s ease 4s 1 forwards;
+}
+
+.s-outline {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    animation: s-outline 2s ease  1 6s forwards;
+}
+.s-outline-1{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    height: 214px;
     background-color: #06042b;
+    animation: s-outline-1 2s  6s 1 forwards;
+}
+.m-outline {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    height: 230px;
+    border-radius: 50%;
+    width: 230px;
+    transform: translate(-50%, -50%);
+    animation: s-outline 2s ease  1 6s forwards;
+}
+.m-outline-1{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    height: 250px;
+    background-color: #06042b;
+    animation: s-outline-1 2s  6s 1 forwards;
 }

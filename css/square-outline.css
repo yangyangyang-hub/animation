@@ -66,6 +66,84 @@
         opacity: 100%;
     }
 }
+@keyframes square-outline-obttom {
+    0% {
+        width: 4px;
+        height: 4px;
+        opacity: 0;
+        transform: translate(80px, 80px);
+    }
+    3% {
+        width: 4px;
+        height: 4px;
+        opacity: 100%;
+    }
+    100% {
+        width: 164px;
+        height: 4px;
+        opacity: 100%;
+        transform: translate(-80px, 80px);
+    }
+}
+@keyframes square-outline-obttom-son {
+    0% {
+        width: 8px;
+        height: 8px;
+        opacity: 0;
+        transform: translate(81px, 79px);
+        
+    }
+    3% {
+        width: 8px;
+        height: 8px;
+        opacity: 100%;
+    }
+    100% {
+        width: 170px;
+        height: 8px;
+        opacity: 100%;
+        transform: translate(-81px, 79px);
+    }
+}
+@keyframes square-outline-right {
+    0% {
+        width: 4px;
+        height: 4px;
+        opacity: 0;
+        transform: translate(-80px, 80px);
+    }
+    3% {
+        width: 4px;
+        height: 4px;
+        opacity: 100%;
+    }
+    100% {
+        width: 4px;
+        height: 164px;
+        opacity: 100%;
+        transform: translate(-80px, -80px);
+    }
+}
+@keyframes square-outline-right-son {
+    0% {
+        width: 8px;
+        height: 8px;
+        opacity: 0;
+        transform: translate(-81px, 100px);
+        
+    }
+    3% {
+        width: 8px;
+        height: 8px;
+        opacity: 100%;
+    }
+    100% {
+        width: 8px;
+        height: 170px;
+        opacity: 100%;
+        transform: translate(-81px, -85px);
+    }
+}
 .square-outline-top {
     position: absolute;
     top: 50%;
@@ -97,5 +175,38 @@
     transform: translate(79px, -81px);
     background-color: #06042b;
     animation: square-outline-left-son 1s 10s forwards;
+
+}
+.square-outline-obttom {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(80px, 80px);
+    background-color: white;
+    animation:  square-outline-obttom 2s 1 5s forwards;
+}
+.square-outline-obttom-son {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(81px, 79px);
+    background-color: #06042b;
+    animation: square-outline-obttom-son 1s 9s forwards;
+}
+.square-outline-right {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-80px, 80px);
+    background-color: white;
+    animation:  square-outline-right 2s 7s forwards;
+}
+.square-outline-right-son {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-79px, 81px);
+    background-color: #06042b;
+    animation: square-outline-right-son 1s 10s forwards;
 
 }

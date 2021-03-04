@@ -34,7 +34,7 @@
     overflow: hidden;
     position: relative;
     background-color: white;
-    animation: father 1s  9s forwards;
+    animation: father 1s 9s forwards;
 }
 .first {
     position: absolute;
@@ -42,7 +42,7 @@
     width: 350px;
     overflow: hidden;
     background-color: #06042b;
-    animation: first 1s  9s forwards;
+    animation: first 0.1s  9s forwards  ease-in;
 }
 .second {
     position: absolute;
@@ -50,7 +50,7 @@
     width: 350px;
     overflow: hidden;
     background-color: white;
-    animation: second 1s  9s forwards;
+    animation: second 0.1s  9s forwards  ease-in;
     transform: translate(100%, 0);
     overflow: hidden;
 }

@@ -69,17 +69,17 @@
     height: 5px;
     width: 10px;
     background-color: #06042b;
-    animation: shooting-star-1 1s 9s forwards 3;
+    animation: shooting-star-1 1s 9s forwards 2;
 }
 .shooting-star-2 {
     position: absolute;
     top: 50%;
     left: 100%;
-    opacity: 0.3;
+    opacity: 0.4;
     height: 5px;
     width: 10px;
     background-color: #06042b;
-    animation: shooting-star-4 1.7s 9s forwards 2;
+    animation: shooting-star-4 1.7s 9s forwards 1;
 }
 .shooting-star-3 {
     position: absolute;
@@ -89,18 +89,18 @@
     height: 5px;
     width: 10px;
     background-color: #06042b;
-    animation: shooting-star-4 1.2s 9s forwards 3;
+    animation: shooting-star-4 1.2s 9s forwards 2;
 }
 
 .shooting-star-4 {
     position: absolute;
     top: 40%;
     left: 100%;
-    opacity: 0.3;
+    opacity: 0.4;
     height: 5px;
     width: 10px;
     background-color: #06042b;
-    animation: shooting-star-2 1s 9.5s forwards 3;
+    animation: shooting-star-2 1s 9.5s forwards 2;
 }
 .shooting-star-5 {
     position: absolute;
@@ -121,7 +121,7 @@
     background-color: #06042b;
     animation: shooting-star-2 1s 10.3s forwards 3;
 } */
-.shooting-star-7 {
+/* .shooting-star-7 {
     position: absolute;
     top: 20%;
     left: 100%;
@@ -130,8 +130,8 @@
     width: 10px;
     background-color: #06042b;
     animation: shooting-star-2 1s 10.1s forwards 2;
-}
-.shooting-star-8 {
+} */
+/* .shooting-star-8 {
     position: absolute;
     top: 40%;
     left: 100%;
@@ -140,4 +140,4 @@
     width: 10px;
     background-color: #06042b;
     animation: shooting-star-4 1.3s 10.1s forwards 2;
-} 
+}  */

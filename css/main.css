@@ -1,0 +1,56 @@
+@keyframes first {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+@keyframes father {
+    0% {
+        border: 0 solid #06042b;
+    }
+    100% {
+        border: 6px solid #06042b;
+    }
+}
+@keyframes second {
+    0% {
+        transform: translate(100%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+.father {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    /* background-color: pink; */
+    /* border: 10px solid #06042b; */
+    margin: 150px auto;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    animation: father 1s  9s forwards;
+}
+.first {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+    background-color: #06042b;
+    animation: first 1s  9s forwards;
+}
+.second {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+    background-color: white;
+    animation: second 1s  9s forwards;
+    transform: translate(100%, 0);
+    overflow: hidden;
+}

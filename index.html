@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/line-column.css">
+    <link rel="stylesheet" href="./css/outline.css">
+    <link rel="stylesheet" href="./css/square.css">
+    <link rel="stylesheet" href="./css//square-outline.css">
+    <style>
+        body {
+            background-color: #06042b;
+        }
+
+        .father {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            /* background-color: pink; */
+            margin: 150px auto;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
 </head>
-<body >
+
+<body>
     <div class="father">
-      
-       
+
+
         <div class="column"></div>
         <div class="column-1"></div>
         <div class="line"></div>
@@ -18,17 +38,35 @@
 
         <div class="b-outline"></div>
         <div class="b-outline-1"></div>
+
         <div class="m-outline"></div>
-        <div class="m-outline-1"></div>
+        <div class="m-father">
+            <div class="m-outline-1"></div>
+        </div>
+
         <div class="s-outline"></div>
-        <div class="s-outline-1"></div>
-        
+        <div class="s-father">
+            <div class="s-outline-1"></div>
+        </div>
+
 
         <div class="in-square"></div>
         <div class="out-square"></div>
-        
+
+        <div class="square-outline-father">
+            <div class="square-outline-top"></div>
+            <div class="square-outline-top-son"></div>
+            <div class="square-outline-left"></div>
+            <div class="square-outline-left-son"></div>
+            <div class="square-outline-5"></div>
+            <div class="square-outline-6"></div>
+            <div class="square-outline-7"></div>
+            <div class="square-outline-8"></div>
+        </div>
+
     </div>
 
 
 </body>
+
 </html>

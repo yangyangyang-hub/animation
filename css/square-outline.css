@@ -1,0 +1,101 @@
+@keyframes square-outline-top {
+    0% {
+        width: 4px;
+        height: 4px;
+        opacity: 0;
+    }
+    3% {
+        width: 4px;
+        height: 4px;
+        opacity: 100%;
+    }
+    100% {
+        width: 164px;
+        height: 4px;
+        opacity: 100%;
+    }
+}
+@keyframes square-outline-top-son {
+    0% {
+        width: 8px;
+        height: 8px;
+        opacity: 0;
+    }
+    3% {
+        width: 8px;
+        height: 8px;
+        opacity: 100%;
+    }
+    100% {
+        width: 170px;
+        height: 8px;
+        opacity: 100%;
+    }
+}
+@keyframes square-outline-left {
+    0% {
+        width: 4px;
+        height: 4px;
+        opacity: 0;
+    }
+    3% {
+        width: 4px;
+        height: 4px;
+        opacity: 100%;
+    }
+    100% {
+        width: 4px;
+        height: 164px;
+        opacity: 100%;
+    }
+}
+@keyframes square-outline-left-son {
+    0% {
+        width: 8px;
+        height: 8px;
+        opacity: 0;
+    }
+    3% {
+        width: 8px;
+        height: 8px;
+        opacity: 100%;
+    }
+    100% {
+        width: 8px;
+        height: 170px;
+        opacity: 100%;
+    }
+}
+.square-outline-top {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-80px, -80px);
+    background-color: white;
+    animation:  square-outline-top 2s 1 5s forwards;
+}
+.square-outline-top-son {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-82px, -82px);
+    background-color: #06042b;
+    animation:  square-outline-top-son  1s 9s forwards;
+}
+.square-outline-left {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(80px, -80px);
+    background-color: white;
+    animation:  square-outline-left 2s 7s forwards;
+}
+.square-outline-left-son {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(79px, -81px);
+    background-color: #06042b;
+    animation: square-outline-left-son 1s 10s forwards;
+
+}

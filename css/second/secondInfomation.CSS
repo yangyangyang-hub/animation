@@ -69,6 +69,20 @@
         opacity: 100%;
     }
 }
+@keyframes second-infomation {
+    0% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
 
 .second-infomation {
     position: absolute;
@@ -77,6 +91,7 @@
     height: 350px;
     width: 350px;
     overflow: hidden;
+    animation: second-infomation 2s 10s forwards;
 }
 .second-infomation-line {
     position: absolute;
@@ -94,7 +109,7 @@
     left: 50%;
     height: 0;
     width: 0;
-    animation: second-infomation-left 2s  9s forwards;
+    animation: second-infomation-left 1s  9s forwards;
     border-top: 10px transparent solid;
     border-bottom: 10px #06042b solid;
     border-left: 10px #06042b solid;

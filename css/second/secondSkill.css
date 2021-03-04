@@ -1,0 +1,122 @@
+@keyframes second-skill {
+    0%{
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(-90deg) scale(0);
+    }
+    10% {
+        opacity: 100%;
+        transform: translate(-50%, -50%) rotate(0) scale(1);
+    }
+    40% {
+        transform: translate(-50%, -50%) rotate(0) scale(0.7);
+    }
+    60% {
+        transform: translate(-50%, -50%) rotate(0) scale(1.1);
+    }
+    70% {
+        transform: translate(-50%, -50%) rotate(0) scale(1.3)
+    }
+    75% {
+        transform: translate(-50%, -50%) rotate(0) scale(1.1)
+    }
+    90% {
+        transform: translate(-50%, -50%) rotate(0) scale(1.4)
+    }
+    100% {
+        opacity: 100%;
+        transform: translate(-50%, -50%) rotate(0) scale(20)
+    }
+}
+@keyframes second-skill-1 {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+@keyframes second-skill-2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 100%;
+    }
+    75% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+.second-skill {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    width: 120px;
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    animation: second-skill 5s 10s forwards;
+    background-color: #06042b;
+    /* border: 2px sold #06042b; */
+}
+.second-skill-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #06042b; */
+    color: white;
+    height: 60px;
+    width: 120px;
+    text-align: center;
+    line-height: 60px;
+    animation: second-skill-1 2s 10s forwards;
+}
+.second-skill-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #06042b; */
+    color: white;
+    height: 60px;
+    width: 120px;
+    text-align: center;
+    line-height: 60px;
+    animation: second-skill-2 2s 11s forwards;
+    opacity: 0;
+}
+.second-skill-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #06042b; */
+    color: white;
+    height: 60px;
+    width: 120px;
+    text-align: center;
+    line-height: 60px;
+    animation: second-skill-2 1s 12.5s forwards;
+    opacity: 0;
+}
+.second-skill-4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #06042b; */
+    color: white;
+    height: 60px;
+    width: 120px;
+    text-align: center;
+    line-height: 60px;
+    animation: second-skill-2 2s 13s forwards;
+    opacity: 0;
+}

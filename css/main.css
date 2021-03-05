@@ -35,6 +35,7 @@
     position: relative;
     background-color: white;
     animation: father 1s 9s forwards;
+    perspective: 500px;
 }
 .first {
     position: absolute;
@@ -52,5 +53,13 @@
     background-color: white;
     animation: second 0.1s  9s forwards  ease-in;
     transform: translate(100%, 0);
+    overflow: hidden;
+}
+.third {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    overflow: hidden;
+    /* background-color: white; */
     overflow: hidden;
 }

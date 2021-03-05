@@ -1,0 +1,154 @@
+@keyframes third-please {
+    0% {
+        opacity: 0;
+        transform:translate(-50%, -50%) rotateX(0deg);
+        color: white;
+    }
+    20% {
+        /* opacity: 10%; */
+        transform: translate(-50%, -50%) rotateX(0deg);
+        color: white;
+    }
+    40% {
+        opacity: 100%;
+        transform: translate(-50%, -50%) rotateX(360deg);
+        color: white;
+    }
+    50% {
+        opacity: 100%;
+        transform: translate(-50%, -50%) rotateX(360deg);
+        color: #06042b;
+    }
+    99% {
+        opacity: 100%;
+        transform: translate(-350px, -50%) rotateX(360deg);
+        color: #06042b;
+    }
+    100% {
+        opacity: 100%;
+        transform: translate(-350px, -50%) rotateX(360deg);
+        color: #06042b;
+    }
+}
+@keyframes third-please-top {
+    0% {
+        transform:translate(-350px, -24px);
+    }
+    20% {
+        transform: translate(-50%, -24px);
+    }
+    80% {
+        transform: translate(-50%, -24px);
+    }
+    100% {
+        transform: translate(350px, -24px);
+    }
+}
+@keyframes third-please-bottom {
+    0% {
+        transform:translate(350px, 24px);
+    }
+    20% {
+        transform: translate(-50%, 24px);
+    }
+    80% {
+        transform: translate(-50%, 24px);
+    }
+    100% {
+        transform: translate(-350px, 24px);
+    }
+}
+@keyframes third-please-left {
+    0% {
+        transform:translate(-80px, -350px);
+        height: 48px;
+        width: 4px;
+    }
+    20% {
+        transform: translate(-80px, -50%);
+        height: 48px;
+        width: 4px;
+    }
+    50% {
+        transform: translate(-80px, -50%);
+        height: 48px;
+        width: 4px;
+    }
+    80% {
+        transform: translate(-80px, -50%);
+        height: 48px;
+        width: 160px;
+    }
+    100% {
+        transform: translate(-350px, -50%);
+        height: 48px;
+        width: 160px;
+    }
+}
+@keyframes third-please-right {
+    0% {
+        transform:translate(80px, 350px);
+    }
+    20% {
+        transform: translate(80px, -50%);
+    }
+    50% {
+        transform: translate(80px, -50%);
+    }
+    80% {
+        transform: translate(80px, -50%);
+    }
+    100% {
+        transform: translate(-350px, -50%);
+    }
+}
+.third-please {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: third-please 7s 14.5s forwards;
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+}
+.third-please-top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-350px, -24px);
+    height: 4px;
+    width: 120px;
+    background-color: pink;
+    animation: third-please-top 1.5s 14.5s forwards;
+}
+.third-please-bottom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(350px, 24px);
+    height: 4px;
+    width: 120px;
+    background-color: pink;
+    animation: third-please-bottom 1.5s 14.5s forwards;
+}
+.third-please-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80px, -350px);
+    height: 48px;
+    width: 4px;
+    background-color: pink;
+    animation: third-please-left 2.5s 16s forwards;
+}
+.third-please-right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(80px, 350px);
+    height: 48px;
+    width: 4px;
+    background-color: pink;
+    animation: third-please-right 2.5s 16s forwards;
+}
